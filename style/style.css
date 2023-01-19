@@ -1,0 +1,475 @@
+/*------------
+Common part
+------------*/
+
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500&family=Work+Sans&display=swap');
+
+  body{
+    font-family: 'Work Sans', sans-serif;
+  }
+  .header-section{
+    background-color: rgb(255, 230, 234);
+    
+    padding: 30px 100px;
+
+  }
+  .header-title{
+    font-size: 43px;
+  }
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-links a{
+    text-decoration: none;
+    color: #424242;
+    font-size: 18px;
+
+  }
+  .nav-links ul{
+    display: flex;
+  }
+  .nav-links li{
+    list-style: none;
+    align-items: center;
+    margin-right: 2rem;
+  }
+  .details-section{
+    display: flex;
+    flex-direction: column;
+   
+    align-items: center;
+  }
+  .details-section img{
+    width: 1050px;
+  }
+  .details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:600px;
+  }
+
+  .title{
+   text-align: center;
+    font-size: 50px;
+  }
+  .btn{
+    background-color: #FF900E;
+    border: 0;
+    border-radius: 8px;
+    font-size: 20px;
+    color: #FFFFFF;
+    width: 180px;
+    height: 64px;
+    
+     margin-bottom: 50px;
+  }
+  .features{
+    margin: 50px 400px;
+    width: 50%;
+    display: flex;
+   grid-column-gap: 100px;
+   justify-content: center;  
+   align-items: center;
+  }
+  .features > div{
+    flex:1;
+  }
+  .working-img img{
+    width: 230px;
+    height: 230px;
+    border-radius: 10px;
+    
+  }
+  
+  .working-img{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    border: 0;
+   
+  }
+  .feature-info{
+    display: flex;
+    flex-direction: column;
+ 
+
+}
+.feature-title{
+    font-size: 40px;
+    width: 350px;
+    margin-top: 90px;
+}
+.quick{
+    color: #727272;
+}
+.orange{
+   color:  #FF900E;
+}
+ 
+.paragraph{
+    width: 530px;
+    color: #727272;
+    font-size: 16px;
+    margin-bottom: 30px;
+    text-align: center;
+    
+}
+.paragraph2{
+    width: 530px;
+    color: #727272;
+    font-size: 16px;
+    margin-bottom: 30px;
+    
+    
+}
+.feature-details-box{
+    width: 500px;
+height: 130px;
+    box-shadow: 1px 1px 10px rgb(229, 229, 229);
+    
+    border-radius: 5px;
+    padding: 5px 15px;
+    margin-bottom: 10px;
+
+    
+}
+ .artitect-img img {
+width:500px;
+height: 780px;
+ }
+ .btn-primary{
+    background-color: #FF900E;
+    border: 0;
+    border-radius: 8px;
+    width: 180px;
+    height: 80px;
+    font-size: 25px;
+    color: #FFFFFF;
+   
+
+ }
+ .award{
+    margin: 50px 170px;
+ }
+
+ .award-box{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-column-gap: 20px;
+    padding-top: 30px;
+    padding-left: 50px;
+
+ }
+ .award-box-container{
+   
+    border: 2px solid #FF900E ;
+    width: 150px;
+    height: 150px;
+ }
+ .award-box-container:hover{
+    border: 2px solid #56a71c ;
+    transform: scale(1.3);
+    transition: 1s ;
+ }
+ .sponsors-img{
+    padding: 50px 180px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 50px;
+    
+ }
+
+ /*----------
+   Blog
+ ----------*/
+ .blogs-section{
+    margin: 50px 50px;
+ }
+ .blog-section-title{
+    text-align: center;
+    font-size: 50px;
+ }
+ 
+
+ .blog .blog-banner img{
+    width:224px;
+    height: 104px;
+    border-radius: 10px;
+    box-shadow: 2px silver;
+}
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-column-gap:24px ;
+  
+    
+  
+}
+.blog{
+
+    width: 230px;
+    height: 252px;
+    box-shadow: 1px 1px 10px silver;
+    border-radius: 10px;
+    padding: 20px 30px;
+
+}
+.blog:hover{
+    transform: scale(1.3);
+    transition: 1s;
+    background-color: bisque;
+}
+/*--------
+  Footer
+--------*/
+.footer{
+    margin: 50px 180px;
+    background-color: #FFF4E7;
+    height: 50px;
+ padding-top: 8px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width:668px) {
+    .header-section ,.award ,.btn-0primary,.blogs-section{
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: 0;
+    margin-left: 0;      
+    }
+    .header-title  ,.features ,.title ,.blog-section-title {
+        padding:20px 10px;
+        font-size: 20px;
+        text-align: start;
+      }
+      .details-section img{
+        width: 100%;
+      }
+     
+      .paragraph ,.paragraph2{
+        width: 250px;
+        color: #727272;
+        font-size: 16px;
+        margin-bottom: 30px;
+        text-align: start;
+        padding-left: 50px;
+        
+    }
+      nav ul{
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+       
+  }
+  .features{
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .working-img{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    
+margin-left: 100px;
+    
+   
+  }
+  .artitect-img img {
+   display: none;
+   
+     }
+     .feature-details-box{
+        width: 200px;
+    height: 350px;
+     box-shadow: 1px 1px 10px rgb(229, 229, 229);
+        margin-left: 100px;
+ 
+    }
+    .award-box{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+       gap: 20px;
+        padding-top: 30px;
+         }
+          .award-box-container{
+   
+           
+            width: 200px;
+            height: 200px;
+         }
+         .sponsors-img{
+           padding-left: 50px;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+         
+            
+         }
+         .sponsors-img img{
+            width: 100px;
+         }
+         .blogs{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            gap:20px ;
+            margin-left: 40px;
+          }
+        
+          .footer{
+            margin: 0;
+            background-color: #FFF4E7;
+            height: 50px;
+         padding-top: 8px;
+            text-align: start;
+            border-radius: 5px;
+        }
+    .features{
+            margin: 10px 20px;
+            
+          }
+          .btn-primary{
+          margin-top: 10px;
+           
+        
+         }
+         .details{
+      
+           
+            width:250px;
+          }
+          .feature-title{
+            font-size: 20px;
+            width: 100%;
+            margin-top: 50px;
+            margin-left: 50px;
+        }
+        .feature-info .btn{
+            margin-left: 50px;
+        }
+}
+
+
+@media only screen and (min-width:669px) and (max-width:992px) {
+    .header-section ,.award ,.blogs-section{
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: 0;
+    margin-left: 0;      
+    }
+    .header-title  ,.features ,.blog-section-title {
+        padding:20px 50px;
+        font-size: 20px;
+        text-align: start;
+      }
+      .details-section img{
+        width: 100%;
+      }
+      .title{
+        font-size: 40px;
+      }
+     
+      .paragraph ,.paragraph2{
+        width: 500px;
+        color: #727272;
+        font-size: 16px;
+        margin-bottom: 30px;
+        text-align: start;
+        padding-left: 100px;
+        
+    }
+      nav ul{
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+       
+  }
+  .features{
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .working-img{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+margin-left: 250px;
+    
+   
+  }
+  .artitect-img img {
+   display: none;
+   
+     }
+     .feature-details-box{
+        width: 300px;
+    height: 250px;
+     box-shadow: 1px 1px 10px rgb(229, 229, 229);
+        margin-left: 200px;
+ 
+    }
+    .award-box{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+       gap: 20px;
+        padding-top: 30px;
+         }
+          .award-box-container{
+   
+           
+            width: 200px;
+            height: 200px;
+         }
+         .sponsors-img{
+           padding-left: 100px;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+         
+            
+         }
+         .sponsors-img img{
+            width: 100px;
+         }
+         .blogs{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap:20px ;
+            margin-left: 40px;
+          }
+        
+          .footer{
+            margin: 0;
+            background-color: #FFF4E7;
+            height: 50px;
+         padding-top: 8px;
+            text-align: start;
+            border-radius: 5px;
+           margin-left: 100px;
+        }
+    .features{
+            margin: 10px 20px;
+            
+          }
+          .btn-primary{
+          margin-top: 10px;
+           margin-left: 100px;
+        
+         }
+         .details{
+      
+           
+            width:250px;
+          }
+          .feature-title{
+            font-size: 20px;
+            width: 100%;
+            margin-top: 50px;
+            margin-left: 50px;
+        }
+        .feature-info .btn{
+            margin-left: 50px;
+        }
+}
